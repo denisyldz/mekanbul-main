@@ -17,13 +17,11 @@ block content
             .panel-body
             each saat in mekanDetay.saatler
               p
-                | &nbsp;
                 | #{saat.gunler}:&nbsp;
                 if (saat.kapali)
-                  |&nbsp;
                   | Kapalı
-                else
-                  | #{saat.acilis} - #{saat.kapanis}
+                else 
+                  | #{saat.acilis}-#{saat.kapanis}
           .panel.panel-primary
             .panel-heading
               h2.panel-title Neler Var?
