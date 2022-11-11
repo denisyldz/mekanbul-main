@@ -1,0 +1,38 @@
+const database = 'mekanbul';
+use(database);
+db.mekanlar.insertOne
+(
+  {
+        "ad":"Starbucks",
+        "adres":"Modernevler",
+        "puan":"4",
+        "imkanlar":["Dünya Kahveleri","Kekler","Pastalar"],
+        "koordinatlar": {
+          "enlem":"37.7",
+          "boylam":"38.5"
+        },
+        "saatler":[
+          {
+            "gunler":"Pazartesi-Cuma",
+            "acilis":"9:00",
+            "kapanis":"23:00",
+            "kapali": false
+          },
+          {
+            "gunler":"Pazartesi-Cuma",
+            "acilis":"9:00",
+            "kapanis":"23:00",
+            "kapali": false
+          }
+        ],
+        "yorumlar": [
+          {
+            "yorumYapan":"Deniz YILDIZ",
+            "puan":"4",
+            "tarih":"20 Ekim 2022",
+            "yorumMetni":"Kahveler iyi"
+          }
+        ]
+
+    }
+)

@@ -29,6 +29,7 @@ const anaSayfa = function(req, res, next) {
     );
 }
 
+
 const mekanBilgisi = function(req, res) {
     res.render('mekanbilgisi',
     { 
