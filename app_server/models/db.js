@@ -4,7 +4,7 @@ require("./mekansema");
 mongoose.connect(dbUrl);
 
 mongoose.connection.on("connected", () => {
-    console.log(dbUrl + "adresindeki veri tabanin abaglandi");
+    console.log(dbUrl + "adresindeki veri tabanina baglandi");
 });
 
 mongoose.connection.on("error", () => {
@@ -12,7 +12,7 @@ mongoose.connection.on("error", () => {
 });
 
 mongoose.connection.on("disconnected", () => {
-    console.log("BAglanti kesilidi");
+    console.log("Baglanti kesilidi");
 });
 
 function close(msg, callback) {
