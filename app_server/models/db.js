@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var dbUrl ="mongodb+srv://denisyldz:denisyldz1@cluster0.u35xhvx.mongodb.net/?retryWrites=true&w=majority";
-require("./mekanShema");
+require("./mekansema");
 mongoose.connect(dbUrl);
 
 mongoose.connection.on("connected", () => {
