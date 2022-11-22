@@ -1,9 +1,8 @@
 var mongoose = require("mongoose");
 //var dbUrl ="mongodb://localhost/mekanbul"
-var dbUrl ="mongodb+srv://denisyldz:denisyldz@cluster0.u35xhvx.mongodb.net/?retryWrites=true&w=majority";
+var dbUrl ="mongodb+srv://denisyldz:denisyldz@mekanbul.daf39vm.mongodb.net/mekanbul?retryWrites=true&w=majority";
 require("./mekansema");
 mongoose.connect(dbUrl);
-
 mongoose.connection.on("connected", () => {
     console.log(dbUrl + " adresindeki veri tabanına bağlandı");
 });
