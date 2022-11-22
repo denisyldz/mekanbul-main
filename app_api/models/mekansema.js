@@ -18,7 +18,7 @@ var mekanSema = new mongoose.Schema({
     adres: String,
     puan: {type: Number, default:0 , min: 0, max: 5},
     imkanlar : [String],
-    koordinat: {type: [Number],index : "2dsphere"},
+    koordinat: {type: [Number], index : "2dsphere"},
     saatler: [saatSema],
     yorumlar:[yorumSema],
 });

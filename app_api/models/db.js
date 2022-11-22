@@ -1,18 +1,19 @@
 var mongoose = require("mongoose");
-var dbUrl ="mongodb+srv://denisyldz:denisyldz1@cluster0.u35xhvx.mongodb.net/?retryWrites=true&w=majority";
-require("./mekanShema");
+//var dbUrl ="mongodb://localhost/mekanbul"
+var dbUrl ="mongodb+srv://denisyldz:denisyldz@cluster0.u35xhvx.mongodb.net/?retryWrites=true&w=majority";
+require("./mekansema");
 mongoose.connect(dbUrl);
 
 mongoose.connection.on("connected", () => {
-    console.log(dbUrl + "adresindeki veri tabanin abaglandi");
+    console.log(dbUrl + " adresindeki veri tabanına bağlandı");
 });
 
 mongoose.connection.on("error", () => {
-    console.log("Baglanti hatasi");
+    console.log("Bağlantı hatası");
 });
 
 mongoose.connection.on("disconnected", () => {
-    console.log("BAglanti kesilidi");
+    console.log("Bağlantı kesildi");
 });
 
 function close(msg, callback) {
