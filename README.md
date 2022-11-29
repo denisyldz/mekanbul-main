@@ -1,13 +1,9 @@
 MekanBul REST API Adresleri
 
-1-Girilen Konum Civarındaki Mekanları Listele
+API Collections Test
 
-![Screenshot_3](https://user-images.githubusercontent.com/100310188/203399685-b6f9e257-0a43-4d30-aa8b-8c780ef1d5d8.png)
+![Screenshot_4](https://user-images.githubusercontent.com/100310188/204511027-db07c6a1-3f9a-4706-9f4d-88248bf8b0fb.png)
 
-2-Mekanın ID İle Mekan Bilgilerini Getir
+API Mocha Test
 
-![Screenshot_1](https://user-images.githubusercontent.com/100310188/203399829-be8ea865-050a-4e96-b7bc-50db60657dc2.png)
-
-3-Bir Mekana Ait Belirli Bir Yorumu Getir
-
-![Screenshot_2](https://user-images.githubusercontent.com/100310188/203399925-5c6a7b81-3b53-4fdf-8f0f-bfe4a210ec92.png)
+![Screenshot 2022-11-29 134840](https://user-images.githubusercontent.com/100310188/204511105-122b86b1-c87a-4572-964b-db7361ac3d82.png)
