@@ -1,7 +1,8 @@
 var mongoose = require("mongoose");
-//var dbUrl ="mongodb://localhost/mekanbul"
-var dbUrl ="mongodb+srv://denisyldz:denisyldz@mekanbul.daf39vm.mongodb.net/mekanbul?retryWrites=true&w=majority";
 require("./mekansema");
+var dbUrl ="mongodb://localhost/mekanbul"
+//var dbUrl ="mongodb+srv://denisyldz:denisyldz@mekanbul.daf39vm.mongodb.net/mekanbul?retryWrites=true&w=majority";
+
 mongoose.connect(dbUrl);
 mongoose.connection.on("connected", () => {
     console.log(dbUrl + " adresindeki veri tabanına bağlandı");
