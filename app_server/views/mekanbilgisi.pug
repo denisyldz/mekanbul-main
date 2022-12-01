@@ -34,8 +34,8 @@ block content
             .panel-heading
               h2.panel-title Konum Bilgisi
             .panel-body
-              -var enlem=mekanDetay.koordinatlar.enlem
-              -var boylam=mekanDetay.koordinatlar.boylam
+              -var enlem=mekanDetay.koordinat.enlem
+              -var boylam=mekanDetay.koordinat.boylam
               img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center='+enlem+','+boylam+'&zoom=12&size=600x400&markers='+enlem+','+boylam+'&key=AIzaSyCmmKygTpBzHGOZEciJpAdxC9v_tWHagnE')
   .row
     .col-xs-12
