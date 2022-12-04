@@ -1,5 +1,6 @@
 extends layout
 include fonksiyonlar/yildiz
+include fonksiyonlar/tarihformat
 block content
   .row.page-header
     .col-lg-12
@@ -51,6 +52,7 @@ block content
                   span.rating
                     +puanOlustur(yorum.puan)
                   span.review-author #{yorum.yorumYapan}
-                  small.reviewTimestamp &nbsp; #{yorum.tarih}
+                  small.reviewTimestamp &nbsp; 
+                  +tarihFormatla(yorum.tarih)
                 .col-xs-12
                   p #{yorum.yorumMetni}
